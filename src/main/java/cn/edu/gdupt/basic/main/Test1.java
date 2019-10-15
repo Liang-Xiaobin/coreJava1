@@ -34,26 +34,52 @@ public class Test1 {
         System.out.println(s);
     }
 
+    /**
+     * 改变基本数据类型值
+     *
+     * @param x
+     * @param y
+     */
     private static void changeInt(int x, int y) {
         x = 9;
         y = 10;
     }
 
+    /**
+     * 改变集合类型值
+     *
+     * @param a
+     */
     private static void changeList(List<Student> a) {
         Student student = new Student();
         a.add(student);
     }
 
+    /**
+     * 更改参数对象指向的引用
+     *
+     * @param student
+     */
     private static void changeObj(Student student) {
         student = new Student();
         student.setName("liang");
     }
 
+    /**
+     * 更改参数对象的属性值
+     *
+     * @param student
+     */
     private static void changeParam(Student student) {
         student.setName("liang");
         student.setAge(19);
     }
 
+    /**
+     * 更改参数字符串的值
+     *
+     * @param s
+     */
     private static void changeString(String s) {
         s = "zhang";
     }
